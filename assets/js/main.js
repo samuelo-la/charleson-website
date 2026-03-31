@@ -90,3 +90,39 @@ const yearNode = document.getElementById("year");
 if (yearNode) {
   yearNode.textContent = String(new Date().getFullYear());
 }
+
+const contactNotice = document.getElementById("contactNotice");
+if (contactNotice) {
+  const params = new URLSearchParams(window.location.search);
+  const status = params.get("contactStatus");
+
+  const noticeMap = {
+    success: {
+      text: "Message sent successfully. We'll get back to you shortly.",
+      classes: ["border-mint-500/70", "bg-mint-500/10", "text-mint-500"]
+    },
+    invalid: {
+      text: "Please fill in all required fields and try again.",
+      classes: ["border-teal-700/60", "bg-teal-700/15", "text-white"]
+    },
+    error: {
+      text: "We could not send your message right now. Please try again shortly.",
+      classes: ["border-teal-700/60", "bg-teal-700/15", "text-white"]
+    }
+  };
+
+  if (status && noticeMap[status]) {
+    const selectedNotice = noticeMap[status];
+    contactNotice.textContent = selectedNotice.text;
+    contactNotice.classList.remove("hidden");
+    contactNotice.classList.add(...selectedNotice.classes);
+
+    window.setTimeout(() => {
+      contactNotice.classList.add("hidden");
+      contactNotice.textContent = "";
+    }, 5000);
+
+    const cleanUrl = `${window.location.pathname}${window.location.hash || ""}`;
+    window.history.replaceState({}, document.title, cleanUrl);
+  }
+}
