@@ -1,1 +1,1 @@
-{"scripts":{"build:css":"tailwindcss build src/input.css -o assets/css/styles.css"},"devDependencies":{"tailwindcss":"^2.0.0","postcss":"^8.0.0"}}
+{\n  "name": "charleson-website",\n  "version": "1.0.0",\n  "scripts": {\n    "build:css": "tailwindcss build src/input.css -o assets/css/styles.css",\n    "watch:css": "tailwindcss -i src/input.css -o assets/css/styles.css --watch"\n  },\n  "devDependencies": {\n    "tailwindcss": "^3.4.0",\n    "postcss": "^8.4.0",\n    "autoprefixer": "^10.4.0"\n  }\n}
