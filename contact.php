@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
-    header('Location: /repositories/charleson-website/index.html#contact');
+    header('Location: index.html#contact');
     exit;
 }
 
@@ -19,12 +19,12 @@ $honeypot = trim($_POST['company'] ?? '');
 
 if ($honeypot !== '') {
     // Treat bot submissions as successful to avoid revealing anti-spam checks.
-    header('Location: /repositories/charleson-website/index.html?contactStatus=success#contact');
+    header('Location: index.html?contactStatus=success#contact');
     exit;
 }
 
 if ($name === '' || $contact === '' || $message === '') {
-    header('Location: /repositories/charleson-website/index.html?contactStatus=invalid#contact');
+    header('Location: index.html?contactStatus=invalid#contact');
     exit;
 }
 
@@ -44,9 +44,9 @@ $headers = [
 $sent = mail($to, $subject, $body, implode("\r\n", $headers));
 
 if ($sent) {
-    header('Location: /repositories/charleson-website/index.html?contactStatus=success#contact');
+    header('Location: index.html?contactStatus=success#contact');
     exit;
 }
 
-header('Location: /repositories/charleson-website/index.html?contactStatus=error#contact');
+header('Location: index.html?contactStatus=error#contact');
 exit;
