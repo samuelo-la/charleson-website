@@ -1,0 +1,1 @@
+{"scripts":{"build:css":"tailwindcss build src/input.css -o assets/css/styles.css"},"devDependencies":{"tailwindcss":"^2.0.0","postcss":"^8.0.0"}}
