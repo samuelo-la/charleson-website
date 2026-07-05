@@ -1,958 +1,634 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Charleson | Connectivity, Simplified</title>
-    <meta
-      name="description"
-      content="Charleson provides telecom and digital distribution solutions for individuals, retailers, and businesses across Nigeria."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-  </head>
-  <body class="font-sans selection:bg-mint-300/50 selection:text-white">
-    <div
-      class="fixed inset-0 -z-20 bg-gradient-to-b from-teal-700 via-teal-800 to-black-900"
-    ></div>
-    <div class="fixed inset-0 -z-10 bg-soft-radial"></div>
 
-    <header
-      class="sticky top-0 z-50 border-b border-teal-700/45 bg-black-900/85 backdrop-blur-md"
-    >
-      <nav
-        class="container-shell flex items-center justify-between py-4"
-        aria-label="Main navigation"
-      >
-        <a href="#home" class="inline-flex items-center gap-3">
-          <img
-            src="assets/images/logo.png"
-            alt="Charleson logo"
-            class="h-10 w-auto"
-          />
-          <span
-            class="hidden text-xl font-bold tracking-tight text-mint-500 sm:inline"
-            >Charleson</span
-          >
-        </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Charleson | Connectivity, Simplified</title>
+  <meta name="description"
+    content="Charleson provides telecom and digital distribution solutions for individuals, retailers, and businesses across Nigeria." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
 
-        <button
-          id="menuToggle"
-          class="rounded-lg border border-black-100 p-2 text-white md:hidden"
-          type="button"
-          aria-expanded="false"
-          aria-controls="mobileMenu"
-          aria-label="Toggle menu"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            stroke-width="2"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M4 6h16M4 12h16M4 18h16"
-            />
-          </svg>
-        </button>
+<body class="font-sans selection:bg-mint-300/50 selection:text-white">
+  <div class="fixed inset-0 -z-20 bg-gradient-to-b from-teal-700 via-teal-800 to-black-900"></div>
+  <div class="fixed inset-0 -z-10 bg-soft-radial"></div>
 
-        <ul
-          class="hidden items-center gap-8 text-sm font-medium text-text-body md:flex"
-        >
+  <header class="sticky top-0 z-50 border-b border-teal-700/45 bg-black-900/85 backdrop-blur-md">
+    <nav class="container-shell flex items-center justify-between py-4" aria-label="Main navigation">
+      <a href="#home" class="inline-flex items-center gap-3">
+        <img src="assets/images/logo.png" alt="Charleson logo" class="h-10 w-auto" />
+        <span class="hidden text-xl font-bold tracking-tight text-mint-500 sm:inline">Charleson</span>
+      </a>
+
+      <button id="menuToggle" class="rounded-lg border border-black-100 p-2 text-white md:hidden" type="button"
+        aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+          stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+
+      <ul class="hidden items-center gap-8 text-sm font-medium text-text-body md:flex">
+        <li>
+          <a href="#home" class="transition hover:text-teal-700">Home</a>
+        </li>
+        <li>
+          <a href="#about" class="transition hover:text-teal-700">About</a>
+        </li>
+        <li>
+          <a href="#services" class="transition hover:text-teal-700">Services</a>
+        </li>
+        <li>
+          <a href="#partners" class="transition hover:text-teal-700">Become a Partner</a>
+        </li>
+        <li>
+          <a href="#contact" class="transition hover:text-teal-700">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div id="mobileMenu" class="container-shell hidden pb-4 md:hidden">
+      <div class="glass-panel p-4">
+        <ul class="grid gap-3 text-sm font-medium text-text-body">
           <li>
-            <a href="#home" class="transition hover:text-teal-700">Home</a>
+            <a href="#home" class="mobile-link block rounded-lg px-3 py-2 hover:bg-teal-700/35">Home</a>
           </li>
           <li>
-            <a href="#about" class="transition hover:text-teal-700">About</a>
+            <a href="#about" class="mobile-link block rounded-lg px-3 py-2 hover:bg-teal-700/35">About</a>
           </li>
           <li>
-            <a href="#services" class="transition hover:text-teal-700"
-              >Services</a
-            >
+            <a href="#services" class="mobile-link block rounded-lg px-3 py-2 hover:bg-teal-700/35">Services</a>
           </li>
           <li>
-            <a href="#partners" class="transition hover:text-teal-700"
-              >Become a Partner</a
-            >
+            <a href="#partners" class="mobile-link block rounded-lg px-3 py-2 hover:bg-teal-700/35">Become a Partner</a>
           </li>
           <li>
-            <a href="#contact" class="transition hover:text-teal-700"
-              >Contact</a
-            >
+            <a href="#contact" class="mobile-link block rounded-lg px-3 py-2 hover:bg-teal-700/35">Contact</a>
           </li>
         </ul>
-      </nav>
+        <a href="#contact" class="cta-primary mt-4 w-full">Get Started</a>
+      </div>
+    </div>
+  </header>
 
-      <div id="mobileMenu" class="container-shell hidden pb-4 md:hidden">
-        <div class="glass-panel p-4">
-          <ul class="grid gap-3 text-sm font-medium text-text-body">
-            <li>
-              <a
-                href="#home"
-                class="mobile-link block rounded-lg px-3 py-2 hover:bg-teal-700/35"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#about"
-                class="mobile-link block rounded-lg px-3 py-2 hover:bg-teal-700/35"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="#services"
-                class="mobile-link block rounded-lg px-3 py-2 hover:bg-teal-700/35"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                href="#partners"
-                class="mobile-link block rounded-lg px-3 py-2 hover:bg-teal-700/35"
-                >Become a Partner</a
-              >
-            </li>
-            <li>
-              <a
-                href="#contact"
-                class="mobile-link block rounded-lg px-3 py-2 hover:bg-teal-700/35"
-                >Contact</a
-              >
-            </li>
-          </ul>
-          <a href="#contact" class="cta-primary mt-4 w-full">Get Started</a>
+  <main>
+    <section id="home" class="relative isolate flex h-screen min-h-screen items-center justify-center overflow-hidden">
+      <img src="assets/images/main.jpg" alt="Charleson main background"
+        class="hero-bg-image absolute inset-0 -z-20 h-full w-full object-cover" data-hero-bg />
+      <div class="absolute inset-0 -z-10 bg-gradient-to-b from-black-900/62 via-black-900/76 to-black-900/88"></div>
+      <div class="absolute inset-0 -z-10 bg-gradient-to-r from-black-900/78 via-black-900/62 to-black-900/28"></div>
+      <div class="absolute inset-0 -z-10 bg-gradient-to-br from-teal-700/36 via-teal-700/22 to-mint-500/16"></div>
+
+      <div class="container-shell relative z-10 flex items-center justify-center py-16 md:py-24">
+        <div
+          class="hero-copy-panel reveal flex w-full max-w-7xl items-center rounded-[2rem] border border-teal-700/40 bg-black-900/72 p-8 md:p-12 lg:p-16 animate-float1">
+          <div class="max-w-xl text-left">
+            <h1 class="mt-6 text-4xl font-semibold leading-tight tracking-tight text-white md:text-6xl">
+              Connectivity, Simplified
+            </h1>
+            <p class="mt-6 max-w-xl text-lg leading-8 text-text-muted">
+              Telecom and tech solutions designed for businesses and everyday
+              users.
+            </p>
+            <div class="mt-10 flex flex-wrap gap-4">
+              <a href="#contact" class="cta-primary">Get Started</a>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <main>
-      <section
-        id="home"
-        class="relative isolate h-screen min-h-screen overflow-hidden"
-      >
-        <img
-          src="assets/images/main.jpg"
-          alt="Charleson main background"
-          class="hero-bg-image absolute inset-0 -z-20 h-full w-full object-cover"
-          data-hero-bg
-        />
-        <div
-          class="absolute inset-0 -z-10 bg-gradient-to-b from-black-900/62 via-black-900/76 to-black-900/88"
-        ></div>
-        <div
-          class="absolute inset-0 -z-10 bg-gradient-to-r from-black-900/78 via-black-900/62 to-black-900/28"
-        ></div>
-        <div
-          class="absolute inset-0 -z-10 bg-gradient-to-br from-teal-700/36 via-teal-700/22 to-mint-500/16"
-        ></div>
-
-        <div
-          class="container-shell relative z-10 flex items-center py-16 md:py-24"
-        >
-          <div
-            class="hero-copy-panel reveal flex w-full max-w-6xl xl:max-w-7xl items-center rounded-[2rem] border border-teal-700/40 bg-black-900/72 p-8 md:p-12 lg:p-16"
-          >
-            <div class="max-w-2xl text-left">
-              <h1
-                class="mt-6 text-4xl font-semibold leading-tight tracking-tight text-white md:text-6xl"
-              >
-                Connectivity, Simplified
-              </h1>
-              <p class="mt-6 max-w-xl text-lg leading-8 text-text-muted">
-                Telecom and tech solutions designed for businesses and everyday
-                users.
-              </p>
-              <div class="mt-10 flex flex-wrap gap-4">
-                <a href="#contact" class="cta-primary">Get Started</a>
-              </div>
-            </div>
+    <section class="border-y border-teal-700/40 py-16 md:py-20">
+      <div class="container-shell">
+        <div class="reveal grid gap-6 md:grid-cols-3">
+          <div class="animate-float2 glass-panel p-6 text-center">
+            <p class="text-3xl font-bold text-mint-500">100+</p>
+            <p class="mt-2 text-sm text-text-muted">Trusted Partners</p>
           </div>
-        </div>
-      </section>
-
-      <section class="border-y border-teal-700/40 py-16 md:py-20">
-        <div class="container-shell">
-          <div class="reveal grid gap-6 md:grid-cols-3">
-            <div class="animate-float2 glass-panel p-6 text-center">
-              <p class="text-3xl font-bold text-mint-500">100+</p>
-              <p class="mt-2 text-sm text-text-muted">Trusted Partners</p>
-            </div>
-            <div class="animate-float1 glass-panel p-6 text-center">
-              <p class="text-3xl font-bold text-mint-500">10M+</p>
-              <p class="mt-2 text-sm text-text-muted">Connected Users</p>
-            </div>
-            <div class="animate-float2 glass-panel p-6 text-center">
-              <p class="text-3xl font-bold text-mint-500">30M+</p>
-              <p class="mt-2 text-sm text-text-muted">Transactions</p>
-            </div>
+          <div class="animate-float1 glass-panel p-6 text-center">
+            <p class="text-3xl font-bold text-mint-500">10M+</p>
+            <p class="mt-2 text-sm text-text-muted">Connected Users</p>
           </div>
-
-          <div class="reveal mt-12">
-            <p
-              class="text-center text-xs font-semibold uppercase tracking-[0.16em] text-text-muted"
-            >
-              Trusted by ecosystem leaders
-            </p>
-            <div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
-              <div
-                class="rounded-xl border border-teal-700/40 bg-black-900/85 p-4 text-center text-sm font-semibold text-text-body"
-              >
-                MTN
-              </div>
-              <div
-                class="rounded-xl border border-teal-700/40 bg-black-900/85 p-4 text-center text-sm font-semibold text-text-body"
-              >
-                Airtel
-              </div>
-              <div
-                class="rounded-xl border border-teal-700/40 bg-black-900/85 p-4 text-center text-sm font-semibold text-text-body"
-              >
-                Glo
-              </div>
-              <div
-                class="rounded-xl border border-teal-700/40 bg-black-900/85 p-4 text-center text-sm font-semibold text-text-body"
-              >
-                Stanbic IBTC
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="services" class="container-shell py-16 md:py-24">
-        <div class="reveal">
-          <h2 class="section-title">Our Services</h2>
-        </div>
-
-        <div class="mt-12 space-y-8">
-          <article
-            class="reveal grid gap-6 rounded-3xl border border-teal-700/40 bg-black-900/85 p-6 card-border-animate md:grid-cols-2 md:items-center md:p-8"
-          >
-            <img
-              src="assets/images/airtime.png"
-              alt="Airtime distribution service placeholder image"
-              class="h-52 w-full rounded-2xl object-cover"
-            />
-            <div>
-              <h3 class="text-2xl font-semibold text-white">
-                Airtime Distribution
-              </h3>
-              <p class="mt-3 text-text-muted">
-                We provide secure, fast, and flexible airtime top-up solutions
-                for wholesalers, retailers, and end-users, ensuring
-                uninterrupted communication at all times.
-              </p>
-            </div>
-          </article>
-
-          <article
-            class="reveal grid gap-6 rounded-3xl border border-teal-700/40 bg-black-900/85 p-6 card-border-animate md:grid-cols-2 md:items-center md:p-8"
-          >
-            <img
-              src="assets/images/data.png"
-              alt="Data services placeholder image"
-              class="md:order-2 h-52 w-full rounded-2xl object-cover"
-            />
-            <div class="md:order-1">
-              <h3 class="text-2xl font-semibold text-white">Data Services</h3>
-              <p class="mt-3 text-text-muted">
-                From small data bundles to enterprise-scale packages, we deliver
-                affordable and reliable internet solutions tailored to diverse
-                needs.
-              </p>
-            </div>
-          </article>
-
-          <article
-            class="reveal grid gap-6 rounded-3xl border border-teal-700/40 bg-black-900/85 p-6 card-border-animate md:grid-cols-2 md:items-center md:p-8"
-          >
-            <img
-              src="assets/images/digital.png"
-              alt="Digital distribution platform placeholder image"
-              class="h-52 w-full rounded-2xl object-cover"
-            />
-            <div>
-              <h3 class="text-2xl font-semibold text-white">
-                Digital Distribution Platform
-              </h3>
-              <p class="mt-3 text-text-muted">
-                Our technology-driven platforms streamline the purchase and
-                distribution process, giving stakeholders an easy, transparent,
-                and efficient way to access telecommunication products anytime,
-                anywhere.
-              </p>
-            </div>
-          </article>
-
-          <article
-            class="reveal grid gap-6 rounded-3xl border border-teal-700/40 bg-black-900/85 p-6 card-border-animate md:grid-cols-2 md:items-center md:p-8"
-          >
-            <img
-              src="assets/images/telecommunication.jpg"
-              alt="Telecommunication devices image"
-              class="md:order-2 h-52 w-full rounded-2xl object-cover"
-            />
-            <div class="md:order-1">
-              <h3 class="text-2xl font-semibold text-white">
-                Telecommunication Devices
-              </h3>
-              <p class="mt-3 text-text-muted">
-                We supply high-quality telecommunication devices and accessories
-                sourced from trusted manufacturers and offered at competitive
-                prices.
-              </p>
-            </div>
-          </article>
-
-          <article
-            class="reveal grid gap-6 rounded-3xl border border-teal-700/40 bg-black-900/85 p-6 card-border-animate md:grid-cols-2 md:items-center md:p-8"
-          >
-            <img
-              src="assets/images/customer.png"
-              alt="Customer onboarding and support placeholder image"
-              class="h-52 w-full rounded-2xl object-cover"
-            />
-            <div>
-              <h3 class="text-2xl font-semibold text-white">
-                Customer Onboarding &amp; Support
-              </h3>
-              <p class="mt-3 text-text-muted">
-                From registration to activation, we deliver seamless
-                connectivity and help telecom operators expand their reach
-                through efficient onboarding and relationship management.
-              </p>
-            </div>
-          </article>
-
-          <article
-            class="reveal grid gap-6 rounded-3xl border border-teal-700/40 bg-black-900/85 p-6 card-border-animate md:grid-cols-2 md:items-center md:p-8"
-          >
-            <img
-              src="assets/images/value-added.png"
-              alt="Value-added services placeholder image"
-              class="md:order-2 h-52 w-full rounded-2xl object-cover"
-            />
-            <div class="md:order-1">
-              <h3 class="text-2xl font-semibold text-white">
-                Value-Added Services
-              </h3>
-              <p class="mt-3 text-text-muted">
-                We go beyond basic telecom services to make connectivity faster,
-                easier, and more convenient for individuals, agents, and
-                businesses.
-              </p>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section
-        id="about"
-        class="border-y border-teal-700/40 bg-card/92 py-16 md:py-24"
-      >
-        <div class="container-shell">
-          <div class="reveal max-w-3xl">
-            <h2 class="section-title">About Us</h2>
-            <p class="section-copy mt-4">
-              25+ years connecting networks to the people who need them. From
-              airtime and data to eSIMs and APIs, we make telecom simple,
-              reliable, and accessible for everyone.
-            </p>
-          </div>
-
-          <div class="reveal mt-12 max-w-3xl md:mt-16">
-            <h2 class="section-title">Our Mission</h2>
-            <p class="section-copy mt-4">
-              To simplify and revolutionise the distribution of
-              telecommunication and technology services.
-            </p>
+          <div class="animate-float2 glass-panel p-6 text-center">
+            <p class="text-3xl font-bold text-mint-500">30M+</p>
+            <p class="mt-2 text-sm text-text-muted">Transactions</p>
           </div>
         </div>
 
-        <!-- Who we serve -->
-        <div class="container-shell">
-          <div class="reveal mt-10 max-w-3xl md:mt-16">
-            <h2 class="section-title">Who We Serve</h2>
-          </div>
-
-          <div class="mt-10 grid gap-6 md:grid-cols-3">
-            <article class="reveal glass-panel p-6">
-              <h3 class="text-xl font-semibold text-white">Individuals</h3>
-              <p class="mt-3 text-sm font-medium text-mint-500">
-                Access airtime, data, eSIMs, and SIM registration to stay
-                connected, top up fast, and manage multiple networks with ease.
-              </p>
-            </article>
-
-            <article class="reveal glass-panel p-6">
-              <h3 class="text-xl font-semibold text-white">Retailers</h3>
-              <p class="mt-3 text-sm font-medium text-mint-500">
-                Virtual top-up services, integrate our API, and leverage
-                value-added services to grow your business, boost profits, and
-                serve customers faster.
-              </p>
-            </article>
-
-            <article class="reveal glass-panel p-6">
-              <h3 class="text-xl font-semibold text-white">Businesses</h3>
-              <p class="mt-3 text-sm font-medium text-mint-500">
-                Keep your teams connected and operations smooth with streamlined
-                staff airtime and data distribution.
-              </p>
-            </article>
+        <div class="reveal mt-12">
+          <p class="text-center text-xs font-semibold uppercase tracking-[0.16em] text-text-muted">
+            Trusted by ecosystem leaders
+          </p>
+          <div class="mt-6 grid grid-cols-2 gap-4 md:grid-cols-4">
+            <div class="flex items-center justify-center rounded-xl border border-teal-700/40 bg-black-900/85 p-4">
+              <img src="/assets/images/MTN_Logo.svg" alt="MTN" class="h-8 w-auto object-contain md:h-10" />
+            </div>
+            <div class="flex items-center justify-center rounded-xl border border-teal-700/40 bg-black-900/85 p-4">
+              <img src="/assets/images/Airtel_Logo.svg" alt="Airtel" class="h-8 w-auto object-contain md:h-10" />
+            </div>
+            <div class="flex items-center justify-center rounded-xl border border-teal-700/40 bg-black-900/85 p-4">
+              <img src="/assets/images/Glologo.png" alt="Glo" class="h-8 w-auto object-contain md:h-10" />
+            </div>
+            <div class="flex items-center justify-center rounded-xl border border-teal-700/40 bg-black-900/85 p-4">
+              <img src="/assets/images/Stanbic ibtc_logo.png" alt="Stanbic IBTC"
+                class="h-8 w-auto object-contain md:h-10" />
+            </div>
           </div>
         </div>
-      </section>
+      </div>
+      </div>
+    </section>
 
-      <section class="container-shell py-16 md:py-24">
-        <div class="reveal">
-          <h2 class="section-title">Why Choose Charleson</h2>
-        </div>
+    <section id="services" class="container-shell py-16 md:py-24">
+      <div class="reveal">
+        <h2 class="section-title">Our Services</h2>
+      </div>
 
-        <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-          <div
-            class="reveal rounded-2xl border border-teal-700/40 bg-black-900/85 p-5 text-text-body card-border-animate"
-          >
-            100+ Trusted Partners
-          </div>
-          <div
-            class="reveal rounded-2xl border border-teal-700/40 bg-black-900/85 p-5 text-text-body card-border-animate"
-          >
-            10M+ Connected Users
-          </div>
-          <div
-            class="reveal rounded-2xl border border-teal-700/40 bg-black-900/85 p-5 text-text-body card-border-animate"
-          >
-            30M+ Successful Transactions
-          </div>
-        </div>
-      </section>
-
-      <section id="partners" class="bg-teal-800 py-16 text-white md:py-20">
-        <div class="container-shell reveal text-center">
-          <h2 class="text-3xl font-semibold tracking-tight md:text-5xl">
-            Become a Partner and Grow Your Business
-          </h2>
-          <div class="mx-auto mt-5 max-w-3xl text-left">
-            <h3 class="text-lg font-semibold text-mint-500 md:text-xl">
-              Benefits
+      <div class="mt-12 space-y-8">
+        <article
+          class="reveal grid gap-6 rounded-3xl border border-teal-700/40 bg-black-900/85 p-6 card-border-animate md:grid-cols-2 md:items-center md:p-8">
+          <img src="assets/images/airtime.png" alt="Airtime distribution service placeholder image"
+            class="h-52 w-full rounded-2xl object-cover" />
+          <div>
+            <h3 class="text-2xl font-semibold text-white">
+              Airtime Distribution
             </h3>
-            <ul
-              class="mt-3 list-disc space-y-2 pl-5 text-base text-text-body md:text-lg"
-            >
-              <li>Earn commissions by selling airtime &amp; data</li>
-              <li>Access our secure and easy-to-use platform</li>
-              <li>Get support from our dedicated team</li>
-              <li>Flexible partnership models to suit your business</li>
-            </ul>
+            <p class="mt-3 text-text-muted">
+              We provide secure, fast, and flexible airtime top-up solutions
+              for wholesalers, retailers, and end-users, ensuring
+              uninterrupted communication at all times.
+            </p>
           </div>
-          <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <a
-              href="#contact"
-              class="inline-flex items-center justify-center rounded-full bg-card px-7 py-3 text-sm font-semibold text-mint-500 transition hover:-translate-y-0.5 hover:bg-teal-700/35"
-              >Start Partnership</a
-            >
-            <a
-              href="https://wa.me/2348104675377?text=Hi%20Charleson%2C%20I%E2%80%99m%20interested%20in%20your%20services."
-              class="inline-flex items-center justify-center rounded-full border border-teal-100 px-7 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10"
-              >Chat on WhatsApp</a
-            >
-          </div>
-        </div>
-      </section>
+        </article>
 
-      <section id="testimonials" class="container-shell py-16 md:py-24">
-        <div class="test-head reveal">
-          <span class="tag">What They're Saying</span>
-          <h2 class="section-title mt-4">
-            Trusted by partners
-            <span class="text-mint-500">across Nigeria</span>
-          </h2>
-          <p class="section-sub">
-            Don't take our word for it - here's what the people using Charleson
-            every day have to say.
+        <article
+          class="reveal grid gap-6 rounded-3xl border border-teal-700/40 bg-black-900/85 p-6 card-border-animate md:grid-cols-2 md:items-center md:p-8">
+          <img src="assets/images/data.png" alt="Data services placeholder image"
+            class="md:order-2 h-52 w-full rounded-2xl object-cover" />
+          <div class="md:order-1">
+            <h3 class="text-2xl font-semibold text-white">Data Services</h3>
+            <p class="mt-3 text-text-muted">
+              From small data bundles to enterprise-scale packages, we deliver
+              affordable and reliable internet solutions tailored to diverse
+              needs.
+            </p>
+          </div>
+        </article>
+
+        <article
+          class="reveal grid gap-6 rounded-3xl border border-teal-700/40 bg-black-900/85 p-6 card-border-animate md:grid-cols-2 md:items-center md:p-8">
+          <img src="assets/images/digital.png" alt="Digital distribution platform placeholder image"
+            class="h-52 w-full rounded-2xl object-cover" />
+          <div>
+            <h3 class="text-2xl font-semibold text-white">
+              Digital Distribution Platform
+            </h3>
+            <p class="mt-3 text-text-muted">
+              Our technology-driven platforms streamline the purchase and
+              distribution process, giving stakeholders an easy, transparent,
+              and efficient way to access telecommunication products anytime,
+              anywhere.
+            </p>
+          </div>
+        </article>
+
+        <article
+          class="reveal grid gap-6 rounded-3xl border border-teal-700/40 bg-black-900/85 p-6 card-border-animate md:grid-cols-2 md:items-center md:p-8">
+          <img src="assets/images/telecommunication.jpg" alt="Telecommunication devices image"
+            class="md:order-2 h-52 w-full rounded-2xl object-cover" />
+          <div class="md:order-1">
+            <h3 class="text-2xl font-semibold text-white">
+              Telecommunication Devices
+            </h3>
+            <p class="mt-3 text-text-muted">
+              We supply high-quality telecommunication devices and accessories
+              sourced from trusted manufacturers and offered at competitive
+              prices.
+            </p>
+          </div>
+        </article>
+
+        <article
+          class="reveal grid gap-6 rounded-3xl border border-teal-700/40 bg-black-900/85 p-6 card-border-animate md:grid-cols-2 md:items-center md:p-8">
+          <img src="assets/images/customer.png" alt="Customer onboarding and support placeholder image"
+            class="h-52 w-full rounded-2xl object-cover" />
+          <div>
+            <h3 class="text-2xl font-semibold text-white">
+              Customer Onboarding &amp; Support
+            </h3>
+            <p class="mt-3 text-text-muted">
+              From registration to activation, we deliver seamless
+              connectivity and help telecom operators expand their reach
+              through efficient onboarding and relationship management.
+            </p>
+          </div>
+        </article>
+
+        <article
+          class="reveal grid gap-6 rounded-3xl border border-teal-700/40 bg-black-900/85 p-6 card-border-animate md:grid-cols-2 md:items-center md:p-8">
+          <img src="assets/images/value-added.png" alt="Value-added services placeholder image"
+            class="md:order-2 h-52 w-full rounded-2xl object-cover" />
+          <div class="md:order-1">
+            <h3 class="text-2xl font-semibold text-white">
+              Value-Added Services
+            </h3>
+            <p class="mt-3 text-text-muted">
+              We go beyond basic telecom services to make connectivity faster,
+              easier, and more convenient for individuals, agents, and
+              businesses.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="border-y border-teal-700/40 bg-card/92 py-16 md:py-24">
+      <div class="container-shell">
+        <div class="reveal max-w-3xl">
+          <h2 class="section-title">About Us</h2>
+          <p class="section-copy mt-4">
+            25+ years connecting networks to the people who need them. From
+            airtime and data to eSIMs and APIs, we make telecom simple,
+            reliable, and accessible for everyone.
           </p>
         </div>
 
-        <div class="test-grid mt-10">
-          <article class="test-card reveal reveal-delay-1">
-            <div class="test-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="test-quote">
-              Charleson has completely transformed how I run my phone
-              accessories shop. The platform is simple, payouts are instant, and
-              their support team has never left me hanging.
-            </p>
-            <div class="test-author">
-              <div class="test-avatar">AO</div>
-              <div class="test-author-info">
-                <h5>Adekemi Olawale</h5>
-                <span>Retail Partner, Lagos</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="test-card reveal reveal-delay-2">
-            <div class="test-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="test-quote">
-              We integrated Charleson's API into our fintech app in under a
-              week. The documentation is excellent and the uptime has been
-              flawless. Exactly what we needed at our scale.
-            </p>
-            <div class="test-author">
-              <div class="test-avatar">EM</div>
-              <div class="test-author-info">
-                <h5>Emeka Mensah</h5>
-                <span>CTO, PayFast Solutions</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="test-card reveal reveal-delay-3">
-            <div class="test-stars" aria-label="5 out of 5 stars">★★★★★</div>
-            <p class="test-quote">
-              I was skeptical at first, but after 6 months as a Charleson
-              partner, my monthly income has grown significantly. The margins
-              are honest and the support is genuinely helpful.
-            </p>
-            <div class="test-author">
-              <div class="test-avatar">FK</div>
-              <div class="test-author-info">
-                <h5>Fatima Kadir</h5>
-                <span>Independent Reseller, Abuja</span>
-              </div>
-            </div>
-          </article>
-        </div>
-
-        <div class="cert-bar reveal mt-8">
-          <div class="cert-item">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                d="M12 3l8 4v5c0 5-3.5 8.4-8 9-4.5-.6-8-4-8-9V7l8-4z"
-                stroke="currentColor"
-                stroke-width="1.8"
-              />
-            </svg>
-            <span>NCC</span> Registered &amp; Compliant
-          </div>
-          <div class="cert-item">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <rect
-                x="4"
-                y="10"
-                width="16"
-                height="10"
-                rx="2"
-                stroke="currentColor"
-                stroke-width="1.8"
-              />
-              <path
-                d="M8 10V7a4 4 0 118 0v3"
-                stroke="currentColor"
-                stroke-width="1.8"
-              />
-            </svg>
-            <span>NDPA</span> Data Privacy Compliant
-          </div>
-          <div class="cert-item">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <circle
-                cx="12"
-                cy="12"
-                r="9"
-                stroke="currentColor"
-                stroke-width="1.8"
-              />
-              <path
-                d="M8 12l2.5 2.5L16 9"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-            <span>25+</span> Years Licensed Operations
-          </div>
-          <div class="cert-item">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-            >
-              <path
-                d="M4 18l5.5-5.5 3 3L20 8"
-                stroke="currentColor"
-                stroke-width="1.8"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <circle cx="4" cy="18" r="1.5" fill="currentColor" />
-              <circle cx="20" cy="8" r="1.5" fill="currentColor" />
-            </svg>
-            <span>ISO</span> Security Standards Aligned
-          </div>
-        </div>
-      </section>
-
-      <section
-        id="contact"
-        class="border-t border-teal-700/40 bg-black-900/85 py-16 md:py-24"
-      >
-        <div class="container-shell grid gap-10 lg:grid-cols-2">
-          <div class="reveal">
-            <h2 class="section-title">Start a Conversation</h2>
-            <p class="section-copy">
-              Tell us what you need and our team will reach out with a practical
-              next step.
-            </p>
-            <div class="contact-details">
-              <div class="contact-detail">
-                <div class="cdetail-icon" aria-hidden="true">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 21s7-5.2 7-11a7 7 0 10-14 0c0 5.8 7 11 7 11z"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                    />
-                    <circle
-                      cx="12"
-                      cy="10"
-                      r="2.5"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <div class="cdetail-label">Address</div>
-                  <div class="cdetail-val">
-                    No 3 Onwuegbuzie Street, Holy Cross Plaza, Asaba, Delta
-                    State, Nigeria.
-                  </div>
-                </div>
-              </div>
-              <div class="contact-detail">
-                <div class="cdetail-icon" aria-hidden="true">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <rect
-                      x="3"
-                      y="5"
-                      width="18"
-                      height="14"
-                      rx="2.5"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                    />
-                    <path
-                      d="M4.5 7l7.5 6 7.5-6"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <div class="cdetail-label">Email</div>
-                  <div class="cdetail-val">
-                    <a
-                      href="mailto:info@charlesoncomms.ng"
-                      class="hover:text-mint-500"
-                      >info@charlesoncomms.ng</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="contact-detail">
-                <div class="cdetail-icon" aria-hidden="true">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M5.5 4h3.2l1.2 3.8-2 1.7a14.7 14.7 0 006.3 6.3l1.7-2L20 15.1V18a2 2 0 01-2.2 2A14.8 14.8 0 014 6.2 2 2 0 016 4.1"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <div class="cdetail-label">Phone</div>
-                  <div class="cdetail-val">+234 803 203 3604</div>
-                </div>
-              </div>
-              <div class="contact-detail">
-                <div class="cdetail-icon" aria-hidden="true">
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle
-                      cx="12"
-                      cy="12"
-                      r="8"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                    />
-                    <path
-                      d="M12 8v4l2.8 2"
-                      stroke="currentColor"
-                      stroke-width="1.8"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <div class="cdetail-label">Hours</div>
-                  <div class="cdetail-val">Mon - Fri, 8am - 6pm WAT</div>
-                </div>
-              </div>
-            </div>
-
-            <a
-              href="https://wa.me/2348032033605?text=Hi%20Charleson%2C%20I%E2%80%99m%20interested%20in%20your%20services."
-              class="cta-secondary mt-8"
-              >WhatsApp Us</a
-            >
-          </div>
-
-          <form
-            class="reveal glass-panel p-6 md:p-8"
-            action="contact.php"
-            method="POST"
-            novalidate
-          >
-            <div class="grid gap-4">
-              <div
-                id="contactNotice"
-                class="hidden rounded-xl border px-4 py-3 text-sm"
-                role="status"
-                aria-live="polite"
-              ></div>
-
-              <label class="text-sm font-medium text-text-body" for="name"
-                >Name</label
-              >
-              <input
-                class="rounded-xl border border-teal-700/45 bg-black-900/70 px-4 py-3 text-sm text-white placeholder:text-text-muted outline-none transition focus:border-mint-500 focus:ring-2 focus:ring-mint-500/30"
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Your full name"
-                required
-              />
-
-              <label
-                class="text-sm font-medium text-text-body"
-                for="contactInfo"
-                >Email/Phone</label
-              >
-              <input
-                class="rounded-xl border border-teal-700/45 bg-black-900/70 px-4 py-3 text-sm text-white placeholder:text-text-muted outline-none transition focus:border-mint-500 focus:ring-2 focus:ring-mint-500/30"
-                type="text"
-                name="contact"
-                id="contactInfo"
-                placeholder="bob@email.com or +234..."
-                required
-              />
-
-              <label class="text-sm font-medium text-text-body" for="message"
-                >Message</label
-              >
-              <textarea
-                class="min-h-36 rounded-xl border border-teal-700/45 bg-black-900/70 px-4 py-3 text-sm text-white placeholder:text-text-muted outline-none transition focus:border-mint-500 focus:ring-2 focus:ring-mint-500/30"
-                name="message"
-                id="message"
-                placeholder="Tell us what you need"
-                required
-              ></textarea>
-
-              <div class="hidden" aria-hidden="true">
-                <label for="company">Company</label>
-                <input
-                  type="text"
-                  name="company"
-                  id="company"
-                  tabindex="-1"
-                  autocomplete="off"
-                />
-              </div>
-
-              <button type="submit" class="cta-primary mt-2">
-                Start a Conversation
-              </button>
-            </div>
-          </form>
-        </div>
-      </section>
-    </main>
-
-    <footer class="border-t border-teal-700/40 bg-card/92 py-12">
-      <div class="container-shell grid gap-8 md:grid-cols-4">
-        <div>
-          <img
-            src="assets/images/logo.png"
-            alt="Charleson logo placeholder"
-            class="h-10 w-auto"
-          />
-          <p class="mt-3 text-lg font-semibold text-mint-500">Charleson</p>
-          <p class="mt-3 text-sm text-text-muted">Connectivity, Simplified</p>
-        </div>
-        <div>
-          <p class="text-sm font-semibold uppercase tracking-wide text-white">
-            Company
+        <div class="reveal mt-12 max-w-3xl md:mt-16">
+          <h2 class="section-title">Our Mission</h2>
+          <p class="section-copy mt-4">
+            To simplify and revolutionise the distribution of
+            telecommunication and technology services.
           </p>
-          <ul class="mt-3 space-y-2 text-sm text-text-muted">
-            <li><a href="#about" class="hover:text-teal-700">About</a></li>
-            <li>
-              <a href="#services" class="hover:text-teal-700">Services</a>
-            </li>
-            <li>
-              <a href="#partners" class="hover:text-teal-700"
-                >Become a Partner</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-sm font-semibold uppercase tracking-wide text-white">
-            Support
-          </p>
-          <ul class="mt-3 space-y-2 text-sm text-text-muted">
-            <li><a href="#contact" class="hover:text-teal-700">Contact</a></li>
-            <li>
-              <a
-                href="mailto:info@charlesoncomms.ng"
-                class="hover:text-teal-700"
-                >info@charlesoncomms.ng</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://wa.me/2348032033605?text=Hi%20Charleson%2C%20I%E2%80%99m%20interested%20in%20your%20services."
-                class="hover:text-teal-700"
-                >WhatsApp</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <p class="text-sm font-semibold uppercase tracking-wide text-white">
-            Socials
-          </p>
-          <div class="footer-socials mt-3">
-            <a href="#" class="social-btn" aria-label="Twitter">
-              <svg
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18.9 3H22l-6.8 7.7L23 21h-6.3l-4.9-6.3L6.2 21H3l7.3-8.3L2 3h6.4l4.5 5.9L18.9 3z"
-                />
-              </svg>
-            </a>
-            <a href="#" class="social-btn" aria-label="LinkedIn">
-              <svg
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M6.5 8.5H3.3V21h3.2V8.5zM4.9 3A1.9 1.9 0 103 4.9 1.9 1.9 0 004.9 3zM21 13.9c0-3.3-1.8-5.8-5.2-5.8a4.5 4.5 0 00-4.1 2.2V8.5H8.5V21h3.2v-6.2c0-1.7.3-3.4 2.4-3.4 2 0 2 1.9 2 3.5V21H21z"
-                />
-              </svg>
-            </a>
-            <a href="#" class="social-btn" aria-label="Instagram">
-              <svg
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="3.5"
-                  y="3.5"
-                  width="17"
-                  height="17"
-                  rx="5"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                />
-                <circle
-                  cx="12"
-                  cy="12"
-                  r="3.8"
-                  stroke="currentColor"
-                  stroke-width="1.8"
-                />
-                <circle cx="17.2" cy="6.8" r="1" fill="currentColor" />
-              </svg>
-            </a>
-            <a href="#" class="social-btn" aria-label="Facebook">
-              <svg
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M14 8h3V4.5h-3c-3 0-5 2-5 5v2H6v3.5h3V21h3.5v-6h3L16 11.5h-3V9.8c0-1.1.4-1.8 1-1.8z"
-                />
-              </svg>
-            </a>
-          </div>
         </div>
       </div>
 
-      <div
-        class="container-shell mt-8 border-t border-black-100 pt-6 text-sm text-text-muted"
-      >
-        <p>
-          &copy; <span id="year"></span> Charleson Communications. All rights
-          reserved.
+      <!-- Who we serve -->
+      <div class="container-shell">
+        <div class="reveal mt-10 max-w-3xl md:mt-16">
+          <h2 class="section-title">Who We Serve</h2>
+        </div>
+
+        <div class="mt-10 grid gap-6 md:grid-cols-3">
+          <article class="reveal glass-panel p-6">
+            <h3 class="text-xl font-semibold text-white">Individuals</h3>
+            <p class="mt-3 text-sm font-medium text-mint-500">
+              Access airtime, data, eSIMs, and SIM registration to stay
+              connected, top up fast, and manage multiple networks with ease.
+            </p>
+          </article>
+
+          <article class="reveal glass-panel p-6">
+            <h3 class="text-xl font-semibold text-white">Retailers</h3>
+            <p class="mt-3 text-sm font-medium text-mint-500">
+              Virtual top-up services, integrate our API, and leverage
+              value-added services to grow your business, boost profits, and
+              serve customers faster.
+            </p>
+          </article>
+
+          <article class="reveal glass-panel p-6">
+            <h3 class="text-xl font-semibold text-white">Businesses</h3>
+            <p class="mt-3 text-sm font-medium text-mint-500">
+              Keep your teams connected and operations smooth with streamlined
+              staff airtime and data distribution.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-shell py-16 md:py-24">
+      <div class="reveal">
+        <h2 class="section-title">Why Choose Charleson</h2>
+      </div>
+
+      <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div
+          class="reveal rounded-2xl border border-teal-700/40 bg-black-900/85 p-5 text-text-body card-border-animate">
+          100+ Trusted Partners
+        </div>
+        <div
+          class="reveal rounded-2xl border border-teal-700/40 bg-black-900/85 p-5 text-text-body card-border-animate">
+          10M+ Connected Users
+        </div>
+        <div
+          class="reveal rounded-2xl border border-teal-700/40 bg-black-900/85 p-5 text-text-body card-border-animate">
+          30M+ Successful Transactions
+        </div>
+      </div>
+    </section>
+
+    <section id="partners" class="bg-teal-800 py-16 text-white md:py-20">
+      <div class="container-shell reveal text-center">
+        <h2 class="text-3xl font-semibold tracking-tight md:text-5xl">
+          Become a Partner and Grow Your Business
+        </h2>
+        <div class="mx-auto mt-5 max-w-3xl text-left">
+          <h3 class="text-lg font-semibold text-mint-500 md:text-xl">
+            Benefits
+          </h3>
+          <ul class="mt-3 list-disc space-y-2 pl-5 text-base text-text-body md:text-lg">
+            <li>Earn commissions by selling airtime &amp; data</li>
+            <li>Access our secure and easy-to-use platform</li>
+            <li>Get support from our dedicated team</li>
+            <li>Flexible partnership models to suit your business</li>
+          </ul>
+        </div>
+        <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+          <a href="#contact"
+            class="inline-flex items-center justify-center rounded-full bg-card px-7 py-3 text-sm font-semibold text-mint-500 transition hover:-translate-y-0.5 hover:bg-teal-700/35">Start
+            Partnership</a>
+          <a href="https://wa.me/2348032033605?text=Hi%20Charleson%2C%20I%E2%80%99m%20interested%20in%20your%20services."
+            class="inline-flex items-center justify-center rounded-full border border-teal-100 px-7 py-3 text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10">Chat
+            on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="container-shell py-16 md:py-24">
+      <div class="test-head reveal">
+        <span class="tag">What They're Saying</span>
+        <h2 class="section-title mt-4">
+          Trusted by partners
+          <span class="text-mint-500">across Nigeria</span>
+        </h2>
+        <p class="section-sub">
+          Don't take our word for it - here's what the people using Charleson
+          every day have to say.
         </p>
       </div>
-    </footer>
 
-    <script src="assets/js/main.js"></script>
-  </body>
+      <div class="test-grid mt-10">
+        <article class="test-card reveal reveal-delay-1">
+          <div class="test-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="test-quote">
+            Charleson has completely transformed how I run my phone
+            accessories shop. The platform is simple, payouts are instant, and
+            their support team has never left me hanging.
+          </p>
+          <div class="test-author">
+            <div class="test-avatar">AO</div>
+            <div class="test-author-info">
+              <h5>Adekemi Olawale</h5>
+              <span>Retail Partner, Lagos</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="test-card reveal reveal-delay-2">
+          <div class="test-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="test-quote">
+            We integrated Charleson's API into our fintech app in under a
+            week. The documentation is excellent and the uptime has been
+            flawless. Exactly what we needed at our scale.
+          </p>
+          <div class="test-author">
+            <div class="test-avatar">EM</div>
+            <div class="test-author-info">
+              <h5>Emeka Mensah</h5>
+              <span>CTO, PayFast Solutions</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="test-card reveal reveal-delay-3">
+          <div class="test-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="test-quote">
+            I was skeptical at first, but after 6 months as a Charleson
+            partner, my monthly income has grown significantly. The margins
+            are honest and the support is genuinely helpful.
+          </p>
+          <div class="test-author">
+            <div class="test-avatar">FK</div>
+            <div class="test-author-info">
+              <h5>Fatima Kadir</h5>
+              <span>Independent Reseller, Abuja</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="cert-bar reveal mt-8">
+        <div class="cert-item">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M12 3l8 4v5c0 5-3.5 8.4-8 9-4.5-.6-8-4-8-9V7l8-4z" stroke="currentColor" stroke-width="1.8" />
+          </svg>
+          <span>NCC</span> Registered &amp; Compliant
+        </div>
+        <div class="cert-item">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="4" y="10" width="16" height="10" rx="2" stroke="currentColor" stroke-width="1.8" />
+            <path d="M8 10V7a4 4 0 118 0v3" stroke="currentColor" stroke-width="1.8" />
+          </svg>
+          <span>NDPA</span> Data Privacy Compliant
+        </div>
+        <div class="cert-item">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8" />
+            <path d="M8 12l2.5 2.5L16 9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+          <span>25+</span> Years Licensed Operations
+        </div>
+        <div class="cert-item">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M4 18l5.5-5.5 3 3L20 8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+              stroke-linejoin="round" />
+            <circle cx="4" cy="18" r="1.5" fill="currentColor" />
+            <circle cx="20" cy="8" r="1.5" fill="currentColor" />
+          </svg>
+          <span>ISO</span> Security Standards Aligned
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="border-t border-teal-700/40 bg-black-900/85 py-16 md:py-24">
+      <div class="container-shell grid gap-10 lg:grid-cols-2">
+        <div class="reveal">
+          <h2 class="section-title">Start a Conversation</h2>
+          <p class="section-copy">
+            Tell us what you need and our team will reach out with a practical
+            next step.
+          </p>
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="cdetail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21s7-5.2 7-11a7 7 0 10-14 0c0 5.8 7 11 7 11z" stroke="currentColor" stroke-width="1.8" />
+                  <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8" />
+                </svg>
+              </div>
+              <div>
+                <div class="cdetail-label">Address</div>
+                <div class="cdetail-val">
+                  No 3 Onwuegbuzie Street, Holy Cross Plaza, Asaba, Delta
+                  State, Nigeria.
+                </div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="cdetail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M4.5 7l7.5 6 7.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div>
+                <div class="cdetail-label">Email</div>
+                <div class="cdetail-val">
+                  <a href="mailto:info@charlesoncomms.ng" class="hover:text-mint-500">info@charlesoncomms.ng</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="cdetail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.5 4h3.2l1.2 3.8-2 1.7a14.7 14.7 0 006.3 6.3l1.7-2L20 15.1V18a2 2 0 01-2.2 2A14.8 14.8 0 014 6.2 2 2 0 016 4.1"
+                    stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div>
+                <div class="cdetail-label">Phone</div>
+                <div class="cdetail-val">+234 803 203 3604</div>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="cdetail-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.8" />
+                  <path d="M12 8v4l2.8 2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div>
+                <div class="cdetail-label">Hours</div>
+                <div class="cdetail-val">Mon - Fri, 8am - 6pm WAT</div>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/2348032033605?text=Hi%20Charleson%2C%20I%E2%80%99m%20interested%20in%20your%20services."
+            class="cta-secondary mt-8">WhatsApp Us</a>
+        </div>
+
+        <form class="reveal glass-panel p-6 md:p-8" action="contact.php" method="POST" novalidate>
+          <div class="grid gap-4">
+            <div id="contactNotice" class="hidden rounded-xl border px-4 py-3 text-sm" role="status" aria-live="polite">
+            </div>
+
+            <label class="text-sm font-medium text-text-body" for="name">Name</label>
+            <input
+              class="rounded-xl border border-teal-700/45 bg-black-900/70 px-4 py-3 text-sm text-white placeholder:text-text-muted outline-none transition focus:border-mint-500 focus:ring-2 focus:ring-mint-500/30"
+              type="text" name="name" id="name" placeholder="Your full name" required />
+
+            <label class="text-sm font-medium text-text-body" for="contactInfo">Email/Phone</label>
+            <input
+              class="rounded-xl border border-teal-700/45 bg-black-900/70 px-4 py-3 text-sm text-white placeholder:text-text-muted outline-none transition focus:border-mint-500 focus:ring-2 focus:ring-mint-500/30"
+              type="text" name="contact" id="contactInfo" placeholder="bob@email.com or +234..." required />
+
+            <label class="text-sm font-medium text-text-body" for="message">Message</label>
+            <textarea
+              class="min-h-36 rounded-xl border border-teal-700/45 bg-black-900/70 px-4 py-3 text-sm text-white placeholder:text-text-muted outline-none transition focus:border-mint-500 focus:ring-2 focus:ring-mint-500/30"
+              name="message" id="message" placeholder="Tell us what you need" required></textarea>
+
+            <div class="hidden" aria-hidden="true">
+              <label for="company">Company</label>
+              <input type="text" name="company" id="company" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <button type="submit" class="cta-primary mt-2">
+              Start a Conversation
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-teal-700/40 bg-card/92 py-12">
+    <div class="container-shell grid gap-8 md:grid-cols-4">
+      <div>
+        <img src="assets/images/logo.png" alt="Charleson logo placeholder"
+          class="justify-self-start h-10 w-auto object-contain" />
+        <p class="mt-3 text-lg font-semibold text-mint-500">Charleson</p>
+        <p class="mt-3 text-sm text-text-muted">Connectivity, Simplified</p>
+      </div>
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-wide text-white">
+          Company
+        </p>
+        <ul class="mt-3 space-y-2 text-sm text-text-muted">
+          <li><a href="#about" class="hover:text-teal-700">About</a></li>
+          <li>
+            <a href="#services" class="hover:text-teal-700">Services</a>
+          </li>
+          <li>
+            <a href="#partners" class="hover:text-teal-700">Become a Partner</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-wide text-white">
+          Support
+        </p>
+        <ul class="mt-3 space-y-2 text-sm text-text-muted">
+          <li><a href="#contact" class="hover:text-teal-700">Contact</a></li>
+          <li>
+            <a href="mailto:info@charlesoncomms.ng" class="hover:text-teal-700">info@charlesoncomms.ng</a>
+          </li>
+          <li>
+            <a href="https://wa.me/2348032033605?text=Hi%20Charleson%2C%20I%E2%80%99m%20interested%20in%20your%20services."
+              class="hover:text-teal-700">WhatsApp</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-wide text-white">
+          Socials
+        </p>
+        <div class="footer-socials mt-3">
+          <a href="#" class="social-btn" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.9 3H22l-6.8 7.7L23 21h-6.3l-4.9-6.3L6.2 21H3l7.3-8.3L2 3h6.4l4.5 5.9L18.9 3z" />
+            </svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M6.5 8.5H3.3V21h3.2V8.5zM4.9 3A1.9 1.9 0 103 4.9 1.9 1.9 0 004.9 3zM21 13.9c0-3.3-1.8-5.8-5.2-5.8a4.5 4.5 0 00-4.1 2.2V8.5H8.5V21h3.2v-6.2c0-1.7.3-3.4 2.4-3.4 2 0 2 1.9 2 3.5V21H21z" />
+            </svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.8" />
+              <circle cx="12" cy="12" r="3.8" stroke="currentColor" stroke-width="1.8" />
+              <circle cx="17.2" cy="6.8" r="1" fill="currentColor" />
+            </svg>
+          </a>
+          <a href="#" class="social-btn" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+              <path d="M14 8h3V4.5h-3c-3 0-5 2-5 5v2H6v3.5h3V21h3.5v-6h3L16 11.5h-3V9.8c0-1.1.4-1.8 1-1.8z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-shell mt-8 border-t border-black-100 pt-6 text-sm text-text-muted">
+      <p>
+        &copy; <span id="year"></span> Charleson Communications. All rights
+        reserved.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
